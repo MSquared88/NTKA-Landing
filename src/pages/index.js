@@ -8,7 +8,10 @@ import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
+import SvgCharts from '../svg/AmericanFlag';
+
+//pictures
+import MasterStarnes from '../components/images/Master_Starnes.jpg';
 
 export default () => (
   <Layout>
@@ -16,7 +19,7 @@ export default () => (
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Main title of your landing page
+            Welcome to North Texas Karate Academy
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
             Free landing page template to promote your business startup and generate leads for the
@@ -34,43 +37,37 @@ export default () => (
     </section>
     <section id="features" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold">Classes</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
+              <p className="font-semibold text-xl">Mondays & Thursdays </p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                4-6yrs old 4:00pm-4:45pm7-12yrs old All Ranks Adults 7:00pm-8:00pm
               </p>
+              <p className="mt-4">7-12yrs old Beginner Kids 5:00pm-5:45pm</p>
+              <p className="mt-4">intermedate and Advanced Kids 6:00pm-7:00pm</p>
+              <p className="mt-4">All Ranks Adults 7:00pm-8:00pm</p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
+              <p className="font-semibold text-xl">Tuesdays</p>
+              <p className="mt-4">7-12yrs old KATAS (Orange, Green and Blue Belts) 6:00pm-7:00pm</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                7-12yrs old KATAS (Purple, Brown, Red and Black Belts) 7:00pm-8:00pm
               </p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
-              <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
-              </p>
+              <p className="mt-4">All Adult Ranks 8:00pm- 9:00pm</p>
             </Card>
           </div>
         </div>
       </div>
     </section>
     <SplitSection
-      id="services"
+      id="About"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+          <h3 className="text-3xl font-semibold leading-tight">About Us</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             Our team of enthusiastic marketers will analyse and evaluate how your company stacks
             against the closest competitors
@@ -82,17 +79,19 @@ export default () => (
     <SplitSection
       reverseOrder
       primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
-          </h3>
+        <div className="lg:pl-32 xl:pl-48 flex-col ">
+          <h3 className="text-3xl font-semibold leading-tight">Our Instructor</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search for opportunities
-            that are in reach
+            Stephen began training in the Martial Arts at age 7 in Shin-Toshi Karate in 1985 and
+            received his gold belt. In 1987 at age 9 he started training in American Karate with Mr.
+            Darrel Sanders at North Texas Karate in Bridgeport , Texas. Stephen recieved his 1st
+            degree black belt at age 12. Stephen taught karate throughout his teenage years for Mr.
+            Sanders. Presently, Stephen is continuing to train under Mr. Billy Smith 10th degree
+            black belt in South Ft.Worth.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<img src={MasterStarnes} />}
     />
     <SplitSection
       primarySlot={
