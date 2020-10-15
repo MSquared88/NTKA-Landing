@@ -13,8 +13,8 @@ const Button = ({ children, className = '', size }) => {
       className={`
         ${sizes[size] || sizes.default}
         ${className}
-        bg-primeBlue-dark
-        hover:bg-primeBlue-dark
+        bg-white
+        hover:bg-primeBlue-light
         rounded
         text-white
     `}

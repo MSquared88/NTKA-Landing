@@ -5,16 +5,18 @@ const Footer = () => (
     <div className="flex -mx-3">
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">About Us</h2>
-        <p className="mt-5">Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+        <p className="mt-5">(940) 255-2038</p>
+        <a href="https://goo.gl/maps/ADx3LN7mHpesF6or7" className="mt-5">
+          3107 State Highway 101 Bridgeport, TX 76426
+        </a>
       </div>
       <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Important Links</h2>
+        <h2 className="text-lg font-semibold">Links</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://codebushi.com">Terms &amp; Conditions</a>
-          </li>
-          <li>
-            <a href="https://codebushi.com">Privacy Policy</a>
+            <a href="https://www.paypal.me/starnesindustries">
+              <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" />
+            </a>
           </li>
         </ul>
       </div>

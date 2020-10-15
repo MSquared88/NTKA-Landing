@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Bounce from 'react-reveal/Bounce';
+import Flip from 'react-reveal/Flip';
+
 //components
 import Button from '../components/Button';
 import Card from '../components/Card';
@@ -25,9 +28,14 @@ export default () => (
       className="pt-10 pb-24"
       style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
     >
-      <div className="container mx-auto px-8 py-8 lg:flex flex-col items-center bg-tint border-solid border border-primeRed shadow-xl">
+      <div
+        className="container mx-auto px-8 py-8 lg:flex flex-col items-center bg-tint border-solid "
+        style={{ boxShadow: '10px 10px 5px rgb(0,0,0)' }}
+      >
         <div className="lg:w-1/2 flex justify-center">
-          <img src={logo} className="h-full object-contain" />
+          <Bounce right>
+            <img src={logo} className="h-full object-contain" />
+          </Bounce>
         </div>
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-none w-full">
@@ -36,35 +44,6 @@ export default () => (
           <p className="text-xl text-white lg:text-4xl mt-6 font-light">
             Karate or Martial Arts is not a sport as baseball, soccer or football. Karate is an art.
           </p>
-        </div>
-      </div>
-    </section>
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48 bg-primeBlue-dark ">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-6xl font-semibold text-white">Class Times</h2>
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-          <div className="flex-1 px-3">
-            <Card className="mb-8 bg-white ">
-              <img src={kidsImg} className="h-64 w-full object-contain" />
-              <p className="font-semibold text-xl">Kids Classes</p>
-              <p className="mt-4">
-                4-6yrs old 4:00pm-4:45pm7-12yrs old All Ranks Adults 7:00pm-8:00pm
-              </p>
-              <p className="mt-4">7-12yrs old Beginner Kids 5:00pm-5:45pm</p>
-              <p className="mt-4">intermedate and Advanced Kids 6:00pm-7:00pm</p>
-              <p className="mt-4">All Ranks Adults 7:00pm-8:00pm</p>
-            </Card>
-          </div>
-          <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Adult Class</p>
-              <p className="mt-4">7-12yrs old KATAS (Orange, Green and Blue Belts) 6:00pm-7:00pm</p>
-              <p className="mt-4">
-                7-12yrs old KATAS (Purple, Brown, Red and Black Belts) 7:00pm-8:00pm
-              </p>
-              <p className="mt-4">All Adult Ranks 8:00pm- 9:00pm</p>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
@@ -101,6 +80,41 @@ export default () => (
       }
       secondarySlot={<img src={MasterStarnes} />}
     />
+    <section id="features" className="py-20 lg:pb-40 lg:pt-48 bg-primeBlue-dark ">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-6xl font-semibold text-white">Class Times</h2>
+        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+          <div className="flex-1 px-3">
+            <Flip left>
+              <Card className="mb-8 bg-white ">
+                <img src={kidsImg} className="h-64 w-full object-contain" />
+                <p className="font-semibold text-xl">Kids Classes</p>
+                <p className="mt-4">
+                  4-6yrs old 4:00pm-4:45pm7-12yrs old All Ranks Adults 7:00pm-8:00pm
+                </p>
+                <p className="mt-4">7-12yrs old Beginner Kids 5:00pm-5:45pm</p>
+                <p className="mt-4">intermedate and Advanced Kids 6:00pm-7:00pm</p>
+                <p className="mt-4">All Ranks Adults 7:00pm-8:00pm</p>
+              </Card>
+            </Flip>
+          </div>
+          <div className="flex-1 px-3">
+            <Flip left>
+              <Card className="mb-8">
+                <p className="font-semibold text-xl">Adult Class</p>
+                <p className="mt-4">
+                  7-12yrs old KATAS (Orange, Green and Blue Belts) 6:00pm-7:00pm
+                </p>
+                <p className="mt-4">
+                  7-12yrs old KATAS (Purple, Brown, Red and Black Belts) 7:00pm-8:00pm
+                </p>
+                <p className="mt-4">All Adult Ranks 8:00pm- 9:00pm</p>
+              </Card>
+            </Flip>
+          </div>
+        </div>
+      </div>
+    </section>
     {/* <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
       <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>

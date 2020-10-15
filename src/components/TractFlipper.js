@@ -16,15 +16,15 @@ const commandments = [
 
 export default function TractFlipper() {
   return (
-    <div className="lg:pr-32 xl:pr-48">
+    <div>
       <ReactCardFlipper
         behavior="click"
         levitate={true}
         width={800}
         height={400}
-        className="container mx-auto"
+        className="container mx-auto cursor-pointer "
       >
-        <div className="bg-black px-10 h-full border-solig border-8 border-yellow-500 flex flex-col justify-center align center">
+        <div className="bg-black px-10 h-full border-solig border-8 border-yellow-500 flex flex-col justify-center align center w-3/5 lg:w-full">
           <h3 className="font-semibold text-6xl text-center text-yellow-500">What If</h3>
 
           {/* <ol type="1" className="list-decimal text-white">
@@ -38,8 +38,8 @@ export default function TractFlipper() {
           </ol> */}
           <h3 className="font-semibold text-yellow text-2xl text-center text-white">Click.</h3>
         </div>
-        <div className="bg-black h-full p-5">
-          <p className="text-white text-xl">
+        <div className="bg-black h-full p-5 w-3/5 lg:w-full overflow-auto">
+          <p className="text-white text-xl  ">
             The dictionary says "good" is to be " morally" excellent. Let's check the standard- the
             Ten Commandments, to see how far we fall short: Is God first in you life? Do you love
             Him with "heart, mind, soul and strength? Have you made a god to suit yourself? Have you
