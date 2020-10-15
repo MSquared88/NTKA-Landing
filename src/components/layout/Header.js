@@ -6,12 +6,7 @@ import Button from '../Button';
 const Header = () => (
   <header className="sticky bg-black shadow z-10">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8 text-white">
-      <div className="flex items-center text-2xl">
-        <div className="w-12 mr-3">
-          <img src={Logo} alt="Logo" />
-        </div>
-        NTKA
-      </div>
+      <div className="flex items-center text-2xl">NTKA</div>
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4 text-xl text-white" href="#features">
           Classes
@@ -25,7 +20,9 @@ const Header = () => (
       </div>
       <div className="hidden md:block">
         <Button className="text-sm">
-          <a href="https://www.paypal.me/starnesindustries">Paypal</a>
+          <a href="https://www.paypal.me/starnesindustries" className="text-white hover:text-white">
+            Paypal
+          </a>
         </Button>
       </div>
     </div>

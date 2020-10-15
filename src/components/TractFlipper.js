@@ -36,9 +36,7 @@ export default function TractFlipper() {
               );
             })}
           </ol> */}
-          <h3 className="font-semibold text-yellow text-2xl text-center text-white">
-            Click here to find out.
-          </h3>
+          <h3 className="font-semibold text-yellow text-2xl text-center text-white">Click.</h3>
         </div>
         <div className="bg-black h-full p-5">
           <p className="text-white text-xl">

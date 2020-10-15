@@ -12,38 +12,41 @@ import TractFlipper from '../components/TractFlipper';
 
 // import customerData from '../data/customer-data';
 //pictures
-import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/AmericanFlag';
 import MasterStarnes from '../components/images/Master_Starnes.jpg';
+import starnesFamily from '../components/images/starnes-family.png';
+import kidsImg from '../components/images/kids.png';
+import logo from '../components/images/NTKA_Logo-removebg.png';
+import americanFlag from '../components/images/american-flag.jpg';
 
 export default () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
-      <div className="container mx-auto px-8 lg:flex">
+    <section
+      className="pt-10 pb-24"
+      style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
+    >
+      <div className="container mx-auto px-8 py-8 lg:flex flex-col items-center bg-tint border-solid border border-primeRed shadow-xl">
+        <div className="lg:w-1/2 flex justify-center">
+          <img src={logo} className="h-full object-contain" />
+        </div>
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-none w-full">
             Welcome to North Texas Karate Academy
           </h1>
-          <p className="text-xl lg:text-3xl mt-6 font-light">
+          <p className="text-xl text-white lg:text-4xl mt-6 font-light">
             Karate or Martial Arts is not a sport as baseball, soccer or football. Karate is an art.
           </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
-          </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
-        </div>
-        <div className="lg:w-1/2">
-          <HeroImage />
         </div>
       </div>
     </section>
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="features" className="py-20 lg:pb-40 lg:pt-48 bg-primeBlue-dark ">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Classes</h2>
+        <h2 className="text-3xl lg:text-6xl font-semibold text-white">Class Times</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="mb-8">
-              <p className="font-semibold text-xl">Mondays & Thursdays </p>
+            <Card className="mb-8 bg-white ">
+              <img src={kidsImg} className="h-64 w-full object-contain" />
+              <p className="font-semibold text-xl">Kids Classes</p>
               <p className="mt-4">
                 4-6yrs old 4:00pm-4:45pm7-12yrs old All Ranks Adults 7:00pm-8:00pm
               </p>
@@ -54,7 +57,7 @@ export default () => (
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Tuesdays</p>
+              <p className="font-semibold text-xl">Adult Class</p>
               <p className="mt-4">7-12yrs old KATAS (Orange, Green and Blue Belts) 6:00pm-7:00pm</p>
               <p className="mt-4">
                 7-12yrs old KATAS (Purple, Brown, Red and Black Belts) 7:00pm-8:00pm
@@ -97,20 +100,6 @@ export default () => (
         </div>
       }
       secondarySlot={<img src={MasterStarnes} />}
-    />
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an action plan that your
-            company needs to follow
-          </p>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
     />
     {/* <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
