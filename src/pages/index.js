@@ -22,10 +22,11 @@ import starnesFamily from '../components/images/starnes-family.png';
 import kidsImg from '../components/images/kids.svg';
 import adultsImg from '../components/images/adults.svg';
 import katasImg from '../components/images/Katas.svg';
+import group from '../components/images/group.png';
 
 import logo from '../components/images/NTKA_Logo-removebg.png';
-// import americanFlag from '../components/images/american-flag.jpg';
 import americanFlag from '../components/images/American-Flag-Enhanced.svg';
+import americanFlag2 from '../components/images/american-flag.jpg';
 
 export default () => (
   <Layout>
@@ -69,7 +70,13 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={
+        <img
+          src={group}
+          className="border-solid border-2 border-primeRed"
+          style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
+        />
+      }
     />
     <SplitSection
       reverseOrder
