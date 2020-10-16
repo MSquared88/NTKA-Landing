@@ -146,6 +146,7 @@ export default () => (
       id="contact"
       className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center"
     >
+      <p>TODO: Contact Form</p>
       <form>
         <input />
       </form>
