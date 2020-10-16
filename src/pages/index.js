@@ -2,6 +2,7 @@ import React from 'react';
 
 import Bounce from 'react-reveal/Bounce';
 import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 //components
 import Button from '../components/Button';
@@ -18,33 +19,40 @@ import TractFlipper from '../components/TractFlipper';
 import SvgCharts from '../svg/AmericanFlag';
 import MasterStarnes from '../components/images/Master_Starnes.jpg';
 import starnesFamily from '../components/images/starnes-family.png';
-import kidsImg from '../components/images/kids.png';
+import kidsImg from '../components/images/kids.svg';
+import adultsImg from '../components/images/adults.svg';
+import katasImg from '../components/images/Katas.svg';
+
 import logo from '../components/images/NTKA_Logo-removebg.png';
-import americanFlag from '../components/images/american-flag.jpg';
+// import americanFlag from '../components/images/american-flag.jpg';
+import americanFlag from '../components/images/American-Flag-Enhanced.svg';
 
 export default () => (
   <Layout>
     <section
-      className="pt-10 pb-24"
+      className="pt-10 pb-24 "
       style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
     >
       <div
-        className="container mx-auto px-8 py-8 lg:flex flex-col items-center bg-tint border-solid "
+        className="container mx-auto px-8 py-8 flex flex-col justify-center items-center bg-tint border-solid rounded-lg"
         style={{ boxShadow: '10px 10px 5px rgb(0,0,0)' }}
       >
-        <div className="lg:w-1/2 flex justify-center">
+        <div className="h-64 flex justify-center">
           <Bounce right>
             <img src={logo} className="h-full object-contain" />
           </Bounce>
         </div>
-        <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-none w-full">
-            Welcome to North Texas Karate Academy
-          </h1>
-          <p className="text-xl text-white lg:text-4xl mt-6 font-light">
-            Karate or Martial Arts is not a sport as baseball, soccer or football. Karate is an art.
-          </p>
-        </div>
+        <Fade>
+          <div className="text-center w-1/2 lg:text-left  ">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-none w-full">
+              Welcome to North Texas Karate Academy
+            </h1>
+            <p className="text-xl text-white lg:text-4xl mt-6 font-light">
+              Karate or Martial Arts is not a sport as baseball, soccer or football. Karate is an
+              art.
+            </p>
+          </div>
+        </Fade>
       </div>
     </section>
     <SplitSection
@@ -80,18 +88,15 @@ export default () => (
       }
       secondarySlot={<img src={MasterStarnes} />}
     />
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48 bg-primeBlue-dark ">
+    <section id="features" className="py-20 lg:pb-40 lg:pt-24 bg-primeBlue-dark ">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-6xl font-semibold text-white">Class Times</h2>
+        <h2 className="text-6xl lg:text-7xl font-semibold text-white">Class Times</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Flip left>
               <Card className="mb-8 bg-white ">
                 <img src={kidsImg} className="h-64 w-full object-contain" />
-                <p className="font-semibold text-xl">Kids Classes</p>
-                <p className="mt-4">
-                  4-6yrs old 4:00pm-4:45pm7-12yrs old All Ranks Adults 7:00pm-8:00pm
-                </p>
+                <p className="mt-4">4-6yrs old 4:00pm-4:45pm</p>
                 <p className="mt-4">7-12yrs old Beginner Kids 5:00pm-5:45pm</p>
                 <p className="mt-4">intermedate and Advanced Kids 6:00pm-7:00pm</p>
                 <p className="mt-4">All Ranks Adults 7:00pm-8:00pm</p>
@@ -100,11 +105,14 @@ export default () => (
           </div>
           <div className="flex-1 px-3">
             <Flip left>
-              <Card className="mb-8">
-                <p className="font-semibold text-xl">Adult Class</p>
+              <Card className="mb-8 bg-white   ">
+                <img src={katasImg} className="h-64 w-full object-contain" />
+
+                <p className="font-semibold text-4xl">Tuesdays</p>
                 <p className="mt-4">
                   7-12yrs old KATAS (Orange, Green and Blue Belts) 6:00pm-7:00pm
                 </p>
+
                 <p className="mt-4">
                   7-12yrs old KATAS (Purple, Brown, Red and Black Belts) 7:00pm-8:00pm
                 </p>
