@@ -29,7 +29,7 @@ module.exports = {
           dark: '#015cab'
         },
         primeRed: '#e61938',
-        tint: 'rgb(0,0,0,.95)',
+        tint: 'rgb(0,0,0,.85)',
         brightYellow: '#ffff00'
       }
     }

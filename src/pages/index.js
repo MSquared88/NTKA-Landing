@@ -151,8 +151,8 @@ export default () => (
         <input />
       </form>
     </section>
-    <section id="stats" className="py-20 lg:pt-32">
-      <TractFlipper />
+    <section id="stats" className="py-20 lg:pb-40 lg:pt-12">
+      <TractFlipper width={!window.matchMedia('(max-width: 800px)').matches ? 800 : 375} />
     </section>
   </Layout>
 );

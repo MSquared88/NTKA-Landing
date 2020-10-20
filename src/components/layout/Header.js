@@ -13,7 +13,7 @@ const Header = () => (
 
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4 text-2xl text-white" href="#About">
-          About Us
+          About
         </AnchorLink>
         <AnchorLink className="px-4 text-2xl text-white" href="#features">
           Classes
@@ -22,7 +22,7 @@ const Header = () => (
           Contact
         </AnchorLink>
       </div>
-      <div className="hidden md:block">
+      <div className="md:pt-0 pt-4">
         <Button className="text-sm">
           <a href="https://www.paypal.me/starnesindustries" className="text-white hover:text-white">
             <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" />

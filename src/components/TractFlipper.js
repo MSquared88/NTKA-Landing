@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactCardFlipper from 'react-card-flipper';
 
+import rainbow from './images/rainbow.jpg';
+import smiley from './images/smiley-bg2.svg';
+
+import Smiley from '../svg/Smiley';
+
 const commandments = [
   'You shall have no other gods before Me.',
   'You shall not make for yourself any graven image.',
@@ -14,18 +19,30 @@ const commandments = [
   'You shall not covet.'
 ];
 
-export default function TractFlipper() {
+export default function TractFlipper({ width }) {
   return (
     <div>
       <ReactCardFlipper
         behavior="click"
         levitate={true}
-        width={800}
-        height={400}
-        className="container mx-auto cursor-pointer "
+        width={width}
+        height={500}
+        className="container mx-auto cursor-pointer"
       >
-        <div className="bg-black px-10 h-full border-solid border-8 border-brightYellow flex flex-col justify-center items-center w-3/5 lg:w-full">
-          <h3 className="font-semibold text-6xl text-center text-brightYellow">What If?</h3>
+        <div
+          className="px-10 h-full flex flex-col justify-center items-center w-full border border-black"
+          style={{ backgroundImage: `url(${rainbow})`, backgroundSize: 'cover' }}
+        >
+          <h3 className="font-bold text-5xl lg:text-6xl text-center text-black ">
+            Smile God Loves You
+          </h3>
+          <div className="flex items-center justify-center">
+            <img src={smiley} className="w-40 h-40 lg:w-64 lg:h-64 " />
+          </div>
+          {/* <div
+            className="w-300 h-300"
+            style={{ backgroundImage: `url(${smiley})`, backgroundSize: 'cover' }}
+          ></div> */}
 
           {/* <ol type="1" className="list-decimal text-white">
             {commandments.map((command, index) => {
@@ -36,21 +53,12 @@ export default function TractFlipper() {
               );
             })}
           </ol> */}
-          <h3 className="font-semibold text-yellow text-2xl text-center text-white">Click.</h3>
         </div>
-        <div className="bg-black h-full px-10 w-3/5 lg:w-full overflow-auto flex flex-col justify-center items-center ">
-          <p className="text-white text-xl  ">
-            Blessed is the man who doesn't walk in the counsel of the wicked, nor stand in the way
-            of sinners, nor sit in the seat of scoffers; but his delight is in Yahweh's law. On his
-            law he meditates day and night. He will be like a tree planted by the streams of water,
-            that brings forth its fruit in its season, whose leaf also does not wither. Whatever he
-            does shall prosper. The wicked are not so, but are like the chaff which the wind drives
-            away. Therefore the wicked shall not stand in the judgment, nor sinners in the
-            congregation of the righteous. For Yahweh knows the way of the righteous, but the way of
-            the wicked shall perish.Why do the nations rage, and the peoples plot a vain thing? The
-            kings of the earth take a stand, and the rulers take counsel together, against Yahweh,
-            and against his Anointed, saying, «Let's break their bonds apart, and cast their cords
-            from us.» He who sits in the heavens will laugh. The LORD will have them in derision.
+        <div className="bg-black text-white h-full px-10 -full overflow-auto flex flex-col justify-center items-center ">
+          <p className=" text-xl  ">
+            For God so loved the world, that he gave his only begotten Son, that whosoever believeth
+            in him should not perish, but have everlasting life. For God sent not his Son into the
+            world to condemn the world; but that the world through him might be saved.
           </p>
         </div>
       </ReactCardFlipper>
