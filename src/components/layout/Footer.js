@@ -11,11 +11,31 @@ const Footer = () => (
         <p className="">(940) 255-2038</p>
       </div>
       <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Links</h2>
+        <h2 className="text-lg font-semibold">Student Links</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://www.paypal.me/starnesindustries">
-              <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" />
+            <a href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM7jn9FgjO8dQqyHLzhdN-Wh">
+              Yellow
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM6LjcxTYx8K9FpwTUAdB751">
+              Gold
+            </a>
+          </li>          
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM63a_2fxyuMfhyK3F-m5le6">
+              Orange
+            </a>
+          </li>          
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM6cFmyGQXXrqyoRUHhsG_Hb">
+              Green
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM5Di5VxYYCq0GWoKdgWWtsG">
+              Blue
             </a>
           </li>
         </ul>

@@ -44,7 +44,7 @@ export default () => (
           </Bounce>
         </div>
         <Fade>
-          <div className="text-center w-1/2 lg:text-left  ">
+          <div className="text-center w-1/2 lg:text-left  w-full lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-none w-full">
               Welcome to North Texas Karate Academy
             </h1>
