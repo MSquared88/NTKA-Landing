@@ -10,7 +10,6 @@ const Header = () => (
         <img src={Logo} className="pr-2" />
         NTKA
       </div>
-
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4 text-2xl text-white" href="#About">
           About
@@ -24,7 +23,7 @@ const Header = () => (
       </div>
       <div className="md:pt-0 pt-4">
         <Button className="text-sm">
-          <a href="https://www.paypal.me/starnesindustries" className="text-white hover:text-white">
+          <a href="https://www.paypal.me/starnesindustries" className="text-white hover:text-white" target="_blank">
             <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" />
           </a>
         </Button>
