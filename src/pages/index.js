@@ -145,13 +145,13 @@ export default () => (
       </section> */}
     <section
       id="contact"
-      className="container mx-auto my-20 py-6 bg-black text-white rounded-lg text-center"
+      className="container mx-auto my-20 bg-black text-white rounded-lg text-center "
     >
       <h1 className="text-white text-5xl font-bold">Contact Form</h1>
       <Contact />
     </section>
-    <section id="stats" className="py-20 lg:pb-40 lg:pt-12">
-      <TractFlipper width={!window.matchMedia('(max-width: 800px)').matches ? 800 : 375} />
+    <section id="stats" className="py-20 lg:pb-40 lg:pt-12 hidden md:block">
+      <TractFlipper width={800} />
     </section>
   </Layout>
 );
