@@ -104,27 +104,31 @@ export default () => (
             <Flip left>
               <Card className="mb-8 bg-white ">
                 <img src={kidsImg} alt="Kids Sparring" className="h-64 w-full object-contain" />
-                <p className="mt-4">4-6yrs old 4:00pm-4:45pm</p>
-                <p className="mt-4">7-12yrs old Beginner Kids 5:00pm-5:45pm</p>
-                <p className="mt-4">intermedate and Advanced Kids 6:00pm-7:00pm</p>
-                <p className="mt-4">All Ranks Adults 7:00pm-8:00pm</p>
+                <p className="font-semibold text-4xl">Mondays</p>
+                <p className="mt-4">4-6yrs old 4:15pm-5:00pm</p>
+                <p className="mt-4">Beginners 7-11yrs 5:00pm-6:00pm</p>
+                <p className="mt-4">Intermediate and Advanced 7-11yrs 6:00pm-7:00pm</p>
+                <p className="mt-4">Teens and Adults 12yrs & up 7:00pm-8:00pm</p>
               </Card>
             </Flip>
           </div>
           <div className="flex-1 px-3">
             <Flip left>
-              <Card className="mb-8 bg-white   ">
+              <Card className="mb-8 bg-white">
                 <img src={katasImg} alt="Adult Punching" className="h-64 w-full object-contain" />
 
-                <p className="font-semibold text-4xl">Tuesdays</p>
+                <p className="font-semibold text-4xl">1st and 3rd Tuesdays</p>
                 <p className="mt-4">
-                  7-12yrs old KATAS (Orange, Green and Blue Belts) 6:00pm-7:00pm
+                  Begginers Kids KATAS (Yellow-Orange belts)
                 </p>
-
+                <p><span className='font-bold'>group 1</span> 4:30pm-5:00pm</p>
+                <p><span className='font-bold'>group 2</span> 5:00pm-5:30pm</p>
                 <p className="mt-4">
-                  7-12yrs old KATAS (Purple, Brown, Red and Black Belts) 7:00pm-8:00pm
+                  Intermediate and Advanced Kids  (Purple, Brown, Red and Black Belts)
                 </p>
-                <p className="mt-4">All Adult Ranks 8:00pm- 9:00pm</p>
+                <p><span className='font-bold'>group 1</span>  5:30pm-6:00pm</p>
+                <p><span className='font-bold'>group 2</span>  6:00pm-6:30pm</p>
+                <p className="mt-4">Teens and Adults All Ranks 8:00pm- 9:00pm</p>
               </Card>
             </Flip>
           </div>
