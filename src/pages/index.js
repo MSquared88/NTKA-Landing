@@ -61,7 +61,7 @@ export default () => (
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-4xl font-bold leading-tight">About Us</h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
+          <p className="mt-8 text-2xl font-light leading-relaxed">
             In Karate an individual will learn discipline, Respect for themselves and others,
             improving their self-esteem and give them the courage to overcome the everyday obstacles
             they face. The classes incorporate a balance of hard work and fun to keep the students
