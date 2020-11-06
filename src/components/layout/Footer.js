@@ -9,6 +9,7 @@ const Footer = () => (
           3107 State Highway 101 Bridgeport, TX 76426
         </a>
         <p className="text-sm lg:text-base">(940) 255-2038</p>
+        <p className="text-sm lg:text-base">starnesmartialarts@gmail.com</p>
       </div>
       <div className="flex-1 px-3">
         <h2 className="lg:text-lg font-semibold">Student Links</h2>
