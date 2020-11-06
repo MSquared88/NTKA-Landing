@@ -105,10 +105,10 @@ export default () => (
               <Card className="mb-8 bg-white ">
                 <img src={kidsImg} alt="Kids Sparring" className="h-64 w-full object-contain" />
                 <p className="font-semibold text-4xl">Mondays</p>
-                <p className="mt-4">4-6yrs old 4:15pm-5:00pm</p>
-                <p className="mt-4">Beginners 7-11yrs 5:00pm-6:00pm</p>
-                <p className="mt-4">Intermediate and Advanced 7-11yrs 6:00pm-7:00pm</p>
-                <p className="mt-4">Teens and Adults 12yrs & up 7:00pm-8:00pm</p>
+                <p className="mt-4"><span className='font-bold'>4-6yrs old</span> 4:15pm-5:00pm</p>
+                <p className="mt-4"><span className='font-bold'>Beginners 7-11yrs</span> 5:00pm-6:00pm</p>
+                <p className="mt-4"><span className='font-bold'>Intermediate and Advanced 7-11yrs</span> 6:00pm-7:00pm</p>
+                <p className="mt-4"><span className='font-bold'>Teens and Adults 12yrs & up</span> 7:00pm-8:00pm</p>
               </Card>
             </Flip>
           </div>
@@ -119,16 +119,16 @@ export default () => (
 
                 <p className="font-semibold text-4xl">1st and 3rd Tuesdays</p>
                 <p className="mt-4">
-                  Begginers Kids KATAS (Yellow-Orange belts)
+                <span className='font-bold'>Begginers Kids KATAS (Yellow-Orange belts)</span>
                 </p>
                 <p><span className='font-bold'>group 1</span> 4:30pm-5:00pm</p>
                 <p><span className='font-bold'>group 2</span> 5:00pm-5:30pm</p>
-                <p className="mt-4">
+                <p className="mt-4 font-bold">
                   Intermediate and Advanced Kids  (Purple, Brown, Red and Black Belts)
                 </p>
                 <p><span className='font-bold'>group 1</span>  5:30pm-6:00pm</p>
                 <p><span className='font-bold'>group 2</span>  6:00pm-6:30pm</p>
-                <p className="mt-4">Teens and Adults All Ranks 8:00pm- 9:00pm</p>
+                <p className="mt-4"><span className='font-bold'>Teens and Adults All Ranks</span> 8:00pm- 9:00pm</p>
               </Card>
             </Flip>
           </div>
