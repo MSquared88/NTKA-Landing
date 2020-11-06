@@ -99,7 +99,7 @@ export default () => (
     <section id="features" className="py-20 lg:pb-40 lg:pt-24 bg-primeBlue-dark ">
       <div className="container mx-auto text-center">
         <h2 className="text-6xl lg:text-7xl font-semibold text-white">Class Times</h2>
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+        <div className="flex flex-col md:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Flip left>
               <Card className="mb-8 bg-white ">
@@ -119,12 +119,12 @@ export default () => (
 
                 <p className="font-semibold text-4xl">1st and 3rd Tuesdays</p>
                 <p className="mt-4">
-                <span className='font-bold'>Begginers Kids KATAS (Yellow-Orange belts)</span>
+                <span className='font-bold'>Begginers Kids KATAS</span>
                 </p>
                 <p><span className='font-bold'>group 1</span> 4:30pm-5:00pm</p>
                 <p><span className='font-bold'>group 2</span> 5:00pm-5:30pm</p>
                 <p className="mt-4 font-bold">
-                  Intermediate and Advanced Kids  (Purple, Brown, Red and Black Belts)
+                  Intermediate and Advanced Kids 
                 </p>
                 <p><span className='font-bold'>group 1</span>  5:30pm-6:00pm</p>
                 <p><span className='font-bold'>group 2</span>  6:00pm-6:30pm</p>
