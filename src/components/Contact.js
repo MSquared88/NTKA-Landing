@@ -14,6 +14,7 @@ export default function Contact() {
           type="text"
           name="name"
           id="name"
+          required
           className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
@@ -41,6 +42,7 @@ export default function Contact() {
           name="message"
           id="message"
           rows="5"
+          required
           className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
