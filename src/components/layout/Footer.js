@@ -3,13 +3,12 @@ import React from 'react';
 const Footer = () => (
   <footer className="container mx-auto py-16 px-3 mt-24 mb-8 text-gray-800">
     <div className="flex -mx-3">
-      <div className="flex-1 px-3">
+      <div className="flex-1 pl-1">
         <h2 className="md:text-lg font-semibold">North Texas Karate Academy</h2>
         <a target="_blank" href="https://goo.gl/maps/ADx3LN7mHpesF6or7" className="mt-5 text-sm">
           3107 State Highway 101 Bridgeport, TX 76426
         </a>
         <p className="text-sm lg:text-base">(940) 255-2038</p>
-        <p className="text-sm lg:text-base">starnesmartialarts@gmail.com</p>
       </div>
       <div className="flex-1 px-3">
         <h2 className="lg:text-lg font-semibold">Student Links</h2>
