@@ -9,7 +9,7 @@ import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import TractFlipper from '../components/TractFlipper';
-import Contact from '../components/Contact'
+import Contact from '../components/Contact';
 // import StatsBox from '../components/StatsBox';
 // import CustomerCard from '../components/CustomerCard';
 // import LabelText from '../components/LabelText';
@@ -19,7 +19,7 @@ import Contact from '../components/Contact'
 import MasterStarnes from '../components/images/Master_Starnes.jpg';
 import kidsImg from '../components/images/kids.svg';
 import katasImg from '../components/images/Katas.svg';
-import group from '../components/images/group.png';
+import group from '../components/images/groupPhoto2-removedbg.png';
 
 import logo from '../components/images/NTKA_Logo-removebg.png';
 import americanFlag from '../components/images/American-Flag-Enhanced.svg';
@@ -74,8 +74,8 @@ export default () => (
         <img
           src={group}
           alt="The American Flag"
-          className="border-solid border-2 border-primeRed"
-          style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
+          className="border-solid border-8 border-black bg-primeRed"
+          // style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
         />
       }
     />
@@ -92,9 +92,17 @@ export default () => (
             Sanders. Presently, Stephen is continuing to train under Mr. Billy Smith 10th degree
             black belt in South Ft. Worth.
           </p>
+          <p className="text-center font-bold text-2xl mt-4">Achievements</p>
+          <p className="font-semibold text-xl">2014 USA Martial Arts Hall of Fame inductee</p>
+          <p className="font-semibold text-xl">2016 Masters Hall of Fame inductee</p>
+          <p className="font-semibold text-xl">2018 Universal Martial Arts Hall of Fame inductee</p>
         </div>
       }
-      secondarySlot={<img alt="Master Stephen Starnes" src={MasterStarnes} />}
+      secondarySlot={
+        <div className="flex flex-col items-center">
+          <img alt="Master Stephen Starnes" src={MasterStarnes} />
+        </div>
+      }
     />
     <section id="features" className="py-20 lg:pb-40 lg:pt-24 bg-primeBlue-dark ">
       <div className="container mx-auto text-center">
@@ -105,10 +113,18 @@ export default () => (
               <Card className="mb-8 bg-white ">
                 <img src={kidsImg} alt="Kids Sparring" className="h-64 w-full object-contain" />
                 <p className="font-semibold text-4xl">Mondays</p>
-                <p className="mt-4"><span className='font-bold'>4-6yrs old</span> 4:15pm-5:00pm</p>
-                <p className="mt-4"><span className='font-bold'>Beginners 7-11yrs</span> 5:00pm-6:00pm</p>
-                <p className="mt-4"><span className='font-bold'>Intermediate and Advanced 7-11yrs</span> 6:00pm-7:00pm</p>
-                <p className="mt-4"><span className='font-bold'>Teens and Adults 12yrs & up</span> 7:00pm-8:00pm</p>
+                <p className="mt-4">
+                  <span className="font-bold">4-6yrs old</span> 4:15pm-5:00pm
+                </p>
+                <p className="mt-4">
+                  <span className="font-bold">Beginners 7-11yrs</span> 5:00pm-6:00pm
+                </p>
+                <p className="mt-4">
+                  <span className="font-bold">Intermediate and Advanced 7-11yrs</span> 6:00pm-7:00pm
+                </p>
+                <p className="mt-4">
+                  <span className="font-bold">Teens and Adults 12yrs & up</span> 7:00pm-8:00pm
+                </p>
               </Card>
             </Flip>
           </div>
@@ -119,16 +135,24 @@ export default () => (
 
                 <p className="font-semibold text-4xl">1st and 3rd Tuesdays</p>
                 <p className="mt-4">
-                <span className='font-bold'>Begginers Kids KATAS</span>
+                  <span className="font-bold">Begginers Kids KATAS</span>
                 </p>
-                <p><span className='font-bold'>group 1</span> 4:30pm-5:00pm</p>
-                <p><span className='font-bold'>group 2</span> 5:00pm-5:30pm</p>
-                <p className="mt-4 font-bold">
-                  Intermediate and Advanced Kids 
+                <p>
+                  <span className="font-bold">group 1</span> 4:30pm-5:00pm
                 </p>
-                <p><span className='font-bold'>group 1</span>  5:30pm-6:00pm</p>
-                <p><span className='font-bold'>group 2</span>  6:00pm-6:30pm</p>
-                <p className="mt-4"><span className='font-bold'>Teens and Adults All Ranks</span> 8:00pm- 9:00pm</p>
+                <p>
+                  <span className="font-bold">group 2</span> 5:00pm-5:30pm
+                </p>
+                <p className="mt-4 font-bold">Intermediate and Advanced Kids</p>
+                <p>
+                  <span className="font-bold">group 1</span> 5:30pm-6:00pm
+                </p>
+                <p>
+                  <span className="font-bold">group 2</span> 6:00pm-6:30pm
+                </p>
+                <p className="mt-4">
+                  <span className="font-bold">Teens and Adults All Ranks</span> 8:00pm- 9:00pm
+                </p>
               </Card>
             </Flip>
           </div>
