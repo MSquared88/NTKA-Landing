@@ -28,7 +28,7 @@ module.exports = {
           light: '#f2f9ff',
           dark: '#015cab'
         },
-        primeRed: '#e61938',
+        primeRed: '#C5011F',
         tint: 'rgb(0,0,0,.85)',
         brightYellow: '#ffff00'
       }
