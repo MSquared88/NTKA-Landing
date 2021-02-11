@@ -1,12 +1,10 @@
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        trackingId: 'G-XGG52CH4ZQ',
-        head: true,
-        anonymize: true,
-        respectDNT: true
+        id: 'G-XGG52CH4ZQ',
+        includeInDevelopment: false
       }
     },
     {
