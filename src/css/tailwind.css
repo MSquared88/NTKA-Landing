@@ -7,6 +7,19 @@ a:hover {
   @apply text-primary-darker;
 }
 
+/* instructor section */
+.instructorP {
+  @apply mt-8 text-2xl font-semibold leading-relaxed;
+}
+
+.instructorCategory {
+  @apply text-center font-bold text-3xl mt-4;
+}
+
+.instructorAch {
+  @apply text-center font-semibold text-xl py-2;
+}
+
 @tailwind components;
 
 @tailwind utilities;

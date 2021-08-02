@@ -75,40 +75,9 @@ export default () => (
           <img
             src={group}
             alt="The American Flag"
-            className="border-solid border-8 border-black bg-primeRed"
+            className="border-solid border-8 border-white bg-primeRed"
             // style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
           />
-        </Bounce>
-      }
-    />
-    <SplitSection
-      reverseOrder
-      primarySlot={
-        <Bounce right>
-          <div className="lg:pl-32 xl:pl- flex-col ">
-            <h3 className="text-4xl font-bold leading-tight">Our Instructor</h3>
-            <p className="mt-8 text-2xl font-light leading-relaxed">
-              Stephen began training in the Martial Arts at age 7 in Shin-Toshi Karate in 1985 and
-              received his gold belt. In 1987 at age 9 he started training in American Karate with
-              Mr. Darrel Sanders at North Texas Karate in Bridgeport , Texas. Stephen received his
-              1st degree black belt at age 12. Stephen taught karate throughout his teenage years
-              for Mr. Sanders. Presently, Stephen is continuing to train under Mr. Billy Smith 10th
-              degree black belt in South Ft. Worth.
-            </p>
-            <p className="text-center font-bold text-2xl mt-4">Achievements</p>
-            <p className="font-semibold text-xl">2014 USA Martial Arts Hall of Fame inductee</p>
-            <p className="font-semibold text-xl">2016 Masters Hall of Fame inductee</p>
-            <p className="font-semibold text-xl">
-              2018 Universal Martial Arts Hall of Fame inductee
-            </p>
-          </div>
-        </Bounce>
-      }
-      secondarySlot={
-        <Bounce left>
-          <div className="flex flex-col items-center">
-            <img alt="Master Stephen Starnes" src={MasterStarnes} />
-          </div>
         </Bounce>
       }
     />
@@ -166,6 +135,78 @@ export default () => (
           </div>
         </div>
       </div>
+    </section>
+    <section id="instructor" className="py-10 px-3 lg:px-10 lg:pb-40 lg:pt-2">
+      <Bounce left>
+        <div className="flex flex-col items-center justify-center">
+          <img alt="Master Stephen Starnes" className="w-full lg:w-2/6" src={MasterStarnes} />
+        </div>
+      </Bounce>
+      <Bounce right>
+        <div className="lg:pl-3 flex-col">
+          <h3 className="text-4xl font-bold leading-tight">Our Instructor</h3>
+          <p className="instructorP">
+            Stephen E. Starnes started his martial arts training in 1985 with Richard Shofitt at
+            Denton Academy  of martial arts.  And I 1987 began training at North Texas Karate in
+            Bridgeport Texas and earned his 1st degree black belt rank at age 12 from instructor
+            Darrell Sanders under the J. Pat Burleson American Karate system.  J. Pat Burleson was
+            the first United States Karate Champion.  Mr. Starnes competed for years as a teenager
+            and young adult in many tournaments placing first place in katas and sparring . In 1992
+             Mr. Starnes because the grand champion in the Advanced Boys 15-17 year old Sparring.  
+          </p>
+
+          <p className="instructorP">
+            In 1997 Mr. Starnes moved from Bridgeport Texas area to DFW area and train at several
+            different dojo's.  In 1998 Mr. Starnes began training with Grandmasters Billy Smith,
+             Steve Parks and Billy Brammer still under the J. Pat Burleson Karate System.   
+          </p>
+          <p className="instructorP">
+            In 2006 Mr. Starnes returned to the Bridgeport area. Mr. Sanders had retired from
+            teaching and had closed North Texas Karate. So in November 2006 Mr. Starnes reopened
+            North Texas Karate under North Texas Karate Academy from the ground up.
+          </p>
+          <p className="instructorP">
+            Currently, Mr . Starnes holds a 9th Degree Black belt in American Karate and Tae Kwon
+            Do. And a 1st Degree Black Belt in Japanese Kobubo weapons. Mr.. Starnes continues his
+            upline under Mr. Billy Smith 10th degree black belt and Keith D Yates 10th Degree Black
+            belt.
+          </p>
+          <p className="instructorP">
+            Mr. Starnes Black Belt rank is recognized under the J. Pat Burleson system World Martial
+            Art Ranking Association and the American Karate And Tae Kwon Do Organization under Keith
+            D. Yates. 
+          </p>
+        </div>
+        <div>
+          <p className="instructorCategory">Mr. Starnes is a member of.</p>
+
+          <p className="instructorAch">AKATO American Karate and Tae Kwon Do Organization </p>
+          <p className="instructorAch">World Martial Art Ranking Association </p>
+          <p className="instructorAch">AKBBA American Karate Black Belt Association </p>
+          <p className="instructorAch">GMAU Gospel Martial Art Union </p>
+
+          <p className="instructorCategory">
+            Mr. Starnes has over 50 black belt students under him currently.
+          </p>
+
+          <p className="instructorCategory">His other Achievements </p>
+          <p className="instructorAch">2014 USA Martial Arts Hall of Fame inductee</p>
+          <p className="instructorAch">2016 Masters Hall of Fame inductee</p>
+          <p className="instructorAch">2021 United States Martial Arts Hall of Fame inductee </p>
+          <p className="instructorAch">
+            2020 Received the Grandmaster Billy Brammer Black Belt lineage Book started in 1961.
+            Passed down from Billy Brammer to Billy Smith to Stephen Starnes.
+          </p>
+          <p className="instructorAch">2021 United States Martial Arts Hall of Fame inductee</p>
+          <p className="instructorAch">
+            2015 Received the 60s, 70s, 80s, 90s Jr. Black Belt Award from the Houston Sport Karate
+            Museum
+          </p>
+          <p className="instructorAch">
+            2021 Received the Billy Brammer Fighter Memorial Award for Houston Sport K
+          </p>
+        </div>
+      </Bounce>
     </section>
     {/* <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
