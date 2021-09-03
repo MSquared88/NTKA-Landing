@@ -23,3 +23,43 @@ a:hover {
 @tailwind components;
 
 @tailwind utilities;
+
+.custom-shape-divider-top-1629923985 {
+  background-color: #015cab;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1629923985 svg {
+  position: relative;
+  display: block;
+  width: calc(124% + 1.3px);
+  height: 126px;
+}
+
+.custom-shape-divider-top-1629923985 .shape-fill {
+  fill: black;
+}
+
+.custom-shape-divider-top-1629925184 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1629925184 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 117px;
+}
+
+.custom-shape-divider-top-1629925184 .shape-fill {
+  fill: #015cab;
+}

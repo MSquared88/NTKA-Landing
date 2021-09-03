@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         G-XGG52CH4ZQ
       </Helmet>
       <Header />
-      <main className="text-gray-900">{children}</main>
+      <main className="relative">{children}</main>
       <Footer />
     </>
   );

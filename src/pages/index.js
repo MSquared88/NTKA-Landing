@@ -37,7 +37,7 @@ export default () => (
         <div className="h-64 flex justify-center">
           <img
             src={logo}
-            className="h-full object-contain"
+            className="h-full object-contain drop-shadow-small"
             alt="North Texas Karate Academy Logo "
           />
         </div>
@@ -59,7 +59,7 @@ export default () => (
       primarySlot={
         <Bounce left>
           <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-bold leading-tight">About Us</h3>
+            <h3 className="text-4xl font-bold leading-tight ">About Us</h3>
             <p className="mt-8 text-2xl font-light leading-relaxed">
               In Karate an individual will learn discipline, Respect for themselves and others,
               improving their self-esteem and give them the courage to overcome the everyday
@@ -76,14 +76,31 @@ export default () => (
             src={group}
             alt="The American Flag"
             className="border-solid border-8 border-white bg-primeRed"
-            // style={{ backgroundImage: `url(${americanFlag})`, backgroundSize: 'cover' }}
           />
         </Bounce>
       }
     />
+    <div class="custom-shape-divider-top-1629923985">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
     <section id="features" className="py-20 lg:pb-40 lg:pt-24 bg-primeBlue-dark ">
       <div className="container mx-auto text-center">
-        <h2 className="text-6xl lg:text-7xl font-semibold text-white">Class Times</h2>
+        <h2
+          className="text-6xl lg:text-8xl  font-semibold text-white"
+          style={{ textShadow: '4px 4px #000000' }}
+        >
+          Class Times
+        </h2>
         <div className="flex flex-col md:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Flip left>
@@ -136,6 +153,19 @@ export default () => (
         </div>
       </div>
     </section>
+    <div class="custom-shape-divider-top-1629925184">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
     <section id="instructor" className="py-10 px-3 lg:px-10 lg:pb-40 lg:pt-2">
       <Bounce left>
         <div className="flex flex-col items-center justify-center">
@@ -154,6 +184,7 @@ export default () => (
             and young adult in many tournaments placing first place in katas and sparring . In 1992
              Mr. Starnes because the grand champion in the Advanced Boys 15-17 year old Sparring.  
           </p>
+          <div className="divide-y-2 divide-dashed md:divide-solid"></div>
 
           <p className="instructorP">
             In 1997 Mr. Starnes moved from Bridgeport Texas area to DFW area and train at several
@@ -181,6 +212,8 @@ export default () => (
           <p className="instructorCategory">Mr. Starnes is a member of.</p>
 
           <p className="instructorAch">AKATO American Karate and Tae Kwon Do Organization </p>
+          <hr className="h-1 w-64 m-auto bg-black" />
+
           <p className="instructorAch">World Martial Art Ranking Association </p>
           <p className="instructorAch">AKBBA American Karate Black Belt Association </p>
           <p className="instructorAch">GMAU Gospel Martial Art Union </p>
