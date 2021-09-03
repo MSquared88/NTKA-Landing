@@ -20,6 +20,10 @@ a:hover {
   @apply text-center font-semibold text-xl py-2;
 }
 
+.spacer {
+  @apply h-px w-64 m-auto bg-black;
+}
+
 @tailwind components;
 
 @tailwind utilities;

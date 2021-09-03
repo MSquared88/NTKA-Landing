@@ -212,31 +212,47 @@ export default () => (
           <p className="instructorCategory">Mr. Starnes is a member of.</p>
 
           <p className="instructorAch">AKATO American Karate and Tae Kwon Do Organization </p>
-          <hr className="h-1 w-64 m-auto bg-black" />
+          <hr className="spacer" />
 
           <p className="instructorAch">World Martial Art Ranking Association </p>
+          <hr className="spacer" />
+
           <p className="instructorAch">AKBBA American Karate Black Belt Association </p>
+          <hr className="spacer" />
+
           <p className="instructorAch">GMAU Gospel Martial Art Union </p>
 
-          <p className="instructorCategory">
-            Mr. Starnes has over 50 black belt students under him currently.
-          </p>
-
           <p className="instructorCategory">His other Achievements </p>
+
           <p className="instructorAch">2014 USA Martial Arts Hall of Fame inductee</p>
+          <hr className="spacer" />
+
           <p className="instructorAch">2016 Masters Hall of Fame inductee</p>
+          <hr className="spacer" />
+
           <p className="instructorAch">2021 United States Martial Arts Hall of Fame inductee </p>
+          <hr className="spacer" />
+
           <p className="instructorAch">
             2020 Received the Grandmaster Billy Brammer Black Belt lineage Book started in 1961.
             Passed down from Billy Brammer to Billy Smith to Stephen Starnes.
           </p>
+          <hr className="spacer" />
+
           <p className="instructorAch">2021 United States Martial Arts Hall of Fame inductee</p>
+          <hr className="spacer" />
+
           <p className="instructorAch">
             2015 Received the 60s, 70s, 80s, 90s Jr. Black Belt Award from the Houston Sport Karate
             Museum
           </p>
+          <hr className="spacer" />
+
           <p className="instructorAch">
             2021 Received the Billy Brammer Fighter Memorial Award for Houston Sport K
+          </p>
+          <p className="instructorCategory">
+            Mr. Starnes has over 50 black belt students under him currently.
           </p>
         </div>
       </Bounce>
