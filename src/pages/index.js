@@ -230,6 +230,9 @@ export default () => (
           <p className="instructorAch">2016 Masters Hall of Fame inductee</p>
           <hr className="spacer" />
 
+          <p className="instructorAch">2018 Universal Martial Arts Hall of Fame inductee </p>
+          <hr className="spacer" />
+
           <p className="instructorAch">2021 United States Martial Arts Hall of Fame inductee </p>
           <hr className="spacer" />
 
@@ -249,7 +252,7 @@ export default () => (
           <hr className="spacer" />
 
           <p className="instructorAch">
-            2021 Received the Billy Brammer Fighter Memorial Award for Houston Sport K
+            2021 Received the Billy Brammer Fighter Memorial Award for Houston Sport Karate Museum
           </p>
           <p className="instructorCategory">
             Mr. Starnes has over 50 black belt students under him currently.
