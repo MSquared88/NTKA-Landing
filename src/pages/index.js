@@ -2,24 +2,18 @@ import React from 'react';
 
 import Bounce from 'react-reveal/Bounce';
 import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
 
-//components
+// components
+import About from '../components/About';
 import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
-import SplitSection from '../components/SplitSection';
 import TractFlipper from '../components/TractFlipper';
 import Contact from '../components/Contact';
-// import StatsBox from '../components/StatsBox';
-// import CustomerCard from '../components/CustomerCard';
-// import LabelText from '../components/LabelText';
 
-// import customerData from '../data/customer-data';
-//pictures
+// pictures
 import MasterStarnes from '../components/images/Master_Starnes.jpg';
 import kidsImg from '../components/images/kids.svg';
 import katasImg from '../components/images/Katas.svg';
-import group from '../components/images/groupPhoto2-removedbg.png';
 
 import logo from '../components/images/NTKA_Logo-removebg.png';
 import americanFlag from '../components/images/American-Flag-Enhanced.svg';
@@ -41,46 +35,18 @@ export default () => (
             alt="North Texas Karate Academy Logo "
           />
         </div>
-        <Fade>
-          <div className="text-center w-full md:w-3/5 lg:text-left ">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-none w-full">
-              Welcome to North Texas Karate Academy
-            </h1>
-            <p className="text-xl text-white lg:text-4xl mt-6 font-light">
-              Karate or Martial Arts is not a sport as baseball, soccer or football. Karate is an
-              art.
-            </p>
-          </div>
-        </Fade>
+        <div className="text-center w-full md:w-3/5 lg:text-left ">
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-none w-full">
+            Welcome to North Texas Karate Academy
+          </h1>
+          <p className="text-xl text-white lg:text-4xl mt-6 font-light">
+            Karate or Martial Arts is not a sport as baseball, soccer or football. Karate is an art.
+          </p>
+        </div>
       </div>
     </section>
-    <SplitSection
-      id="About"
-      primarySlot={
-        <Bounce left>
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-bold leading-tight ">About Us</h3>
-            <p className="mt-8 text-2xl font-light leading-relaxed">
-              In Karate an individual will learn discipline, Respect for themselves and others,
-              improving their self-esteem and give them the courage to overcome the everyday
-              obstacles they face. The classes incorporate a balance of hard work and fun to keep
-              the students highly motivated and interested in learning the arts of karate for years
-              to come. Karate is a contact art!!!
-            </p>
-          </div>
-        </Bounce>
-      }
-      secondarySlot={
-        <Bounce right>
-          <img
-            src={group}
-            alt="The American Flag"
-            className="border-solid border-8 border-white bg-primeRed"
-          />
-        </Bounce>
-      }
-    />
-    <div class="custom-shape-divider-top-1629923985">
+    <About />
+    <div className="custom-shape-divider-top-1629923985">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +55,8 @@ export default () => (
       >
         <path
           d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-          class="shape-fill"
-        ></path>
+          className="shape-fill"
+        />
       </svg>
     </div>
     <section id="features" className="py-20 lg:pb-40 lg:pt-24 bg-primeBlue-dark ">
@@ -153,7 +119,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <div class="custom-shape-divider-top-1629925184">
+    <div className="custom-shape-divider-top-1629925184">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -162,8 +128,8 @@ export default () => (
       >
         <path
           d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
-          class="shape-fill"
-        ></path>
+          className="shape-fill"
+        />
       </svg>
     </div>
     <section id="instructor" className="py-10 px-3 lg:px-10 lg:pb-40 lg:pt-2">
@@ -177,19 +143,19 @@ export default () => (
           <h3 className="text-4xl font-bold leading-tight">Our Instructor</h3>
           <p className="instructorP">
             Stephen E. Starnes started his martial arts training in 1985 with Richard Shofitt at
-            Denton Academy  of martial arts.  And I 1987 began training at North Texas Karate in
+            Denton Academy of martial arts. And I 1987 began training at North Texas Karate in
             Bridgeport Texas and earned his 1st degree black belt rank at age 12 from instructor
-            Darrell Sanders under the J. Pat Burleson American Karate system.  J. Pat Burleson was
-            the first United States Karate Champion.  Mr. Starnes competed for years as a teenager
+            Darrell Sanders under the J. Pat Burleson American Karate system. J. Pat Burleson was
+            the first United States Karate Champion. Mr. Starnes competed for years as a teenager
             and young adult in many tournaments placing first place in katas and sparring . In 1992
-             Mr. Starnes because the grand champion in the Advanced Boys 15-17 year old Sparring.  
+            Mr. Starnes because the grand champion in the Advanced Boys 15-17 year old Sparring.
           </p>
-          <div className="divide-y-2 divide-dashed md:divide-solid"></div>
+          <div className="divide-y-2 divide-dashed md:divide-solid" />
 
           <p className="instructorP">
-            In 1997 Mr. Starnes moved from Bridgeport Texas area to DFW area and train at several
-            different dojo's.  In 1998 Mr. Starnes began training with Grandmasters Billy Smith,
-             Steve Parks and Billy Brammer still under the J. Pat Burleson Karate System.   
+            In 1997 Mr. Starnes moved from Bridgeport Texas area to DFW area and trained at several
+            different dojos. In 1998 Mr. Starnes began training with Grandmasters Billy Smith, Steve
+            Parks and Billy Brammer still under the J. Pat Burleson Karate System.
           </p>
           <p className="instructorP">
             In 2006 Mr. Starnes returned to the Bridgeport area. Mr. Sanders had retired from
@@ -205,24 +171,24 @@ export default () => (
           <p className="instructorP">
             Mr. Starnes Black Belt rank is recognized under the J. Pat Burleson system World Martial
             Art Ranking Association and the American Karate And Tae Kwon Do Organization under Keith
-            D. Yates. 
+            D. Yates.
           </p>
         </div>
         <div>
           <p className="instructorCategory">Mr. Starnes is a member of.</p>
 
-          <p className="instructorAch">AKATO American Karate and Tae Kwon Do Organization </p>
+          <p className="instructorAch">AKATO American Karate and Tae Kwon Do Organization</p>
           <hr className="spacer" />
 
-          <p className="instructorAch">World Martial Art Ranking Association </p>
+          <p className="instructorAch">World Martial Art Ranking Association</p>
           <hr className="spacer" />
 
-          <p className="instructorAch">AKBBA American Karate Black Belt Association </p>
+          <p className="instructorAch">AKBBA American Karate Black Belt Association</p>
           <hr className="spacer" />
 
-          <p className="instructorAch">GMAU Gospel Martial Art Union </p>
+          <p className="instructorAch">GMAU Gospel Martial Art Union</p>
 
-          <p className="instructorCategory">His other Achievements </p>
+          <p className="instructorCategory">His other Achievements</p>
 
           <p className="instructorAch">2014 USA Martial Arts Hall of Fame inductee</p>
           <hr className="spacer" />
@@ -230,10 +196,10 @@ export default () => (
           <p className="instructorAch">2016 Masters Hall of Fame inductee</p>
           <hr className="spacer" />
 
-          <p className="instructorAch">2018 Universal Martial Arts Hall of Fame inductee </p>
+          <p className="instructorAch">2018 Universal Martial Arts Hall of Fame inductee</p>
           <hr className="spacer" />
 
-          <p className="instructorAch">2021 United States Martial Arts Hall of Fame inductee </p>
+          <p className="instructorAch">2021 United States Martial Arts Hall of Fame inductee</p>
           <hr className="spacer" />
 
           <p className="instructorAch">
