@@ -2,7 +2,7 @@ import React from 'react';
 
 import Bounce from 'react-reveal/Bounce';
 import SplitSection from './SplitSection';
-import group from './images/groupPhoto2-removedbg.png';
+import group from './images/black-belt-group.jpg';
 
 export default function about() {
   return (
@@ -26,7 +26,7 @@ export default function about() {
         <Bounce right>
           <img
             src={group}
-            alt="The American Flag"
+            alt="Group of balck belts in karate"
             className="border-solid border-8 border-white bg-primeRed"
           />
         </Bounce>
