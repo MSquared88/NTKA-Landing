@@ -20,7 +20,7 @@ const Header = () => {
     <header className="sticky bg-black shadow z-10">
       <div className="container flex flex-col lg:flex-row  justify-between items-center mx-auto py-4 px-8 text-white">
         <div className="flex items-center text-3xl fonts">
-          <img src={Logo} className="pr-2" />
+          <img src={Logo} className="pr-2" alt="logo" />
           NTKA
         </div>
         <div className="flex mt-4 sm:mt-0">
@@ -58,6 +58,7 @@ const Header = () => {
                         <a
                           className="text-white hover:text-yellow-400"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM7jn9FgjO8dQqyHLzhdN-Wh"
                         >
                           Yellow Belt
@@ -67,6 +68,7 @@ const Header = () => {
                         <a
                           className="text-white hover:text-yellow-700"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM6LjcxTYx8K9FpwTUAdB751"
                         >
                           Gold Belt
@@ -76,6 +78,7 @@ const Header = () => {
                         <a
                           className="text-white hover:text-orange-400"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM63a_2fxyuMfhyK3F-m5le6"
                         >
                           Orange Belt
@@ -85,6 +88,7 @@ const Header = () => {
                         <a
                           className="text-white hover:text-green-700 border-"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM6cFmyGQXXrqyoRUHhsG_Hb"
                         >
                           Green Belt
@@ -94,6 +98,7 @@ const Header = () => {
                         <a
                           className="text-white"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.youtube.com/playlist?list=PL80Hf8TMAMM5Di5VxYYCq0GWoKdgWWtsG"
                         >
                           Blue Belt
@@ -113,9 +118,11 @@ const Header = () => {
               href="https://www.paypal.me/starnesindustries"
               className="text-white hover:text-white"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="h-8"
+                alt="paypal logo"
                 src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png"
               />
             </a>
