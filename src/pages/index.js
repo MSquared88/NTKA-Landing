@@ -73,9 +73,7 @@ export default () => (
               <Card className="mb-8 bg-white ">
                 <img src={kidsImg} alt="Kids Sparring" className="h-64 w-full object-contain" />
                 <p className="font-semibold text-4xl">Mondays / Thursdays</p>
-                <p className="mt-4">
-                  <span className="font-bold">5-6yrs old</span> 4:15pm-5:00pm
-                </p>
+
                 <p className="mt-4">
                   <span className="font-bold">Beginners 7-11yrs</span> 5:00pm-6:00pm
                 </p>
