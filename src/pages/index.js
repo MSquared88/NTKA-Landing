@@ -75,13 +75,17 @@ export default () => (
                 <p className="font-semibold text-4xl">Mondays / Thursdays</p>
 
                 <p className="mt-4">
-                  <span className="font-bold">Beginners 7-11yrs</span> 5:00pm-6:00pm
+                  <span className="font-bold">(MONDAYS ONLY) Beginner 6yr olds</span> 4:15pm-5:00pm
                 </p>
                 <p className="mt-4">
-                  <span className="font-bold">Intermediate and Advanced 7-11yrs</span> 6:00pm-7:00pm
+                  <span className="font-bold">Beginner 7-11yrs old</span> 5:00pm-6:00pm
                 </p>
                 <p className="mt-4">
-                  <span className="font-bold">Teens and Adults 12yrs & up</span> 7:00pm-8:00pm
+                  <span className="font-bold">Intermediate and Advanced 7-11yrs old</span>{' '}
+                  6:00pm-7:00pm
+                </p>
+                <p className="mt-4">
+                  <span className="font-bold">Teens and Adults 12yrs old & up</span> 7:00pm-8:00pm
                 </p>
               </Card>
             </Flip>
