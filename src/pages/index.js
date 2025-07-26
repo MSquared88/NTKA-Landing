@@ -14,7 +14,7 @@ import Contact from '../components/Contact';
 import MasterStarnes from '../components/images/Master_Starnes.jpg';
 import kidsImg from '../components/images/kids.svg';
 import katasImg from '../components/images/Katas.svg';
-
+import aliPhoto from '../components/images/alisha_pic.jpg';
 import logo from '../components/images/NTKA_Logo-removebg.png';
 import americanFlag from '../components/images/American-Flag-Enhanced.svg';
 
@@ -67,7 +67,7 @@ export default () => (
         >
           Class Times
         </h2>
-        <div className="flex flex-col md:flex-row sm:-mx-3 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-start gap-4 sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Flip left>
               <Card className="mb-8 bg-white ">
@@ -75,7 +75,7 @@ export default () => (
                 <p className="font-semibold text-4xl">Mondays / Thursdays</p>
 
                 <p className="mt-4">
-                  <span className="font-bold">(MONDAYS ONLY) Beginner 6yr olds</span> 4:15pm-5:00pm
+                  <span className="font-bold">(MONDAYS ONLY) Beginner 6yr olds</span> 5:00pm-5:45pm
                 </p>
                 <p className="mt-4">
                   <span className="font-bold">Beginner 7-11yrs old</span> 5:00pm-6:00pm
@@ -93,28 +93,54 @@ export default () => (
           <div className="flex-1 px-3">
             <Flip left>
               <Card className="mb-8 bg-white">
-                <img src={katasImg} alt="Adult Punching" className="h-64 w-full object-contain" />
+                <img
+                  src={katasImg}
+                  alt="Adult Punching"
+                  className="h-64 w-full object-contain sm:h-48"
+                />
 
                 <p className="font-semibold text-4xl">1st and 3rd Tuesdays</p>
                 <p className="mt-4">
-                  <span className="font-bold">Begginers Kids KATAS</span>
+                  <span className="font-bold text-2xl">Begginers Kids KATAS</span>
                 </p>
                 <p>
-                  <span className="font-bold">group 1</span> 4:30pm-5:00pm
+                  <span className="font-bold ">yellow belts</span> 4:30pm-5:00pm
                 </p>
                 <p>
-                  <span className="font-bold">group 2</span> 5:00pm-5:30pm
+                  <span className="font-bold">gold & orange belts</span> 5:00pm-5:30pm
                 </p>
-                <p className="mt-4 font-bold">Intermediate and Advanced Kids</p>
+                <p className="mt-4 font-bold text-2xl">Intermediate and Advanced Kids</p>
                 <p>
-                  <span className="font-bold">group 1</span> 5:30pm-6:00pm
+                  <span className="font-bold">green & blue belts</span> 5:30pm-6:00pm
                 </p>
                 <p>
-                  <span className="font-bold">group 2</span> 6:00pm-6:30pm
+                  <span className="font-bold">purple & low brown belts</span> 6:00pm-6:30pm
                 </p>
-                <p className="mt-4">
-                  <span className="font-bold">Teens and Adults All Ranks</span> 8:00pm- 9:00pm
+                <p>
+                  <span className="font-bold">high brown - black</span> 6:30pm- 7:15pm
                 </p>
+              </Card>
+            </Flip>
+          </div>
+          <div className="flex-1 px-3 sm:col-span-2 sm:justify-self-center sm:w-1/2">
+            <Flip left>
+              <Card className="mb-8 bg-white">
+                <img src={aliPhoto} alt="Adult Punching" className="h-64 w-full object-contain" />
+
+                <h2 className="font-semibold text-4xl">Tuesdays</h2>
+                <p className="font-semibold text-xl">6:30pm-7:30pm</p>
+                <p className="mt-4 font-bold text-2xl">Instructor</p>
+                <p className="font-semibold text-xl">6th Degree Black Belt</p>
+                <p className="font-semibold text-xl">Alisha Starnes</p>
+                <p className="mt-4 font-bold text-2xl">Location</p>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://maps.app.goo.gl/2VUtCCTZDephrQCD6"
+                  className="mt-5 text-lg"
+                >
+                  413 E Wise St, <br /> Bowie, TX 76230
+                </a>
               </Card>
             </Flip>
           </div>
@@ -136,13 +162,16 @@ export default () => (
     </div>
     <section id="instructor" className="py-10 px-3 lg:px-10 lg:pb-40 lg:pt-2">
       <Bounce left>
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mb-12">
+          <h3 className="text-6xl font-bold leading-tight">Our Instructor</h3>
+          <h3 className="text-4xl font-bold leading-tight mb-12">
+            Grand Master (10th Degree) American Karate Black Belt
+          </h3>
           <img alt="Master Stephen Starnes" className="w-full lg:w-2/6" src={MasterStarnes} />
         </div>
       </Bounce>
       <Bounce right>
         <div className="lg:pl-3 flex-col">
-          <h3 className="text-4xl font-bold leading-tight">Our Instructor</h3>
           <p className="instructorP">
             Stephen E. Starnes started his martial arts training in 1985 with Richard Shofitt at
             Denton Academy of martial arts. And I 1987 began training at North Texas Karate in
@@ -165,7 +194,7 @@ export default () => (
             North Texas Karate under North Texas Karate Academy from the ground up.
           </p>
           <p className="instructorP">
-            Currently, Mr . Starnes holds a 9th Degree Black belt in American Karate and Tae Kwon
+            Currently, Mr . Starnes holds a 10th Degree Black belt in American Karate and Tae Kwon
             Do. And a 1st Degree Black Belt in Japanese Kobubo weapons. Mr.. Starnes continues his
             upline under Mr. Billy Smith 10th degree black belt and Keith D Yates 10th Degree Black
             belt.
