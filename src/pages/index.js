@@ -71,7 +71,11 @@ export default () => (
           <div className="flex-1 px-3">
             <Flip left>
               <Card className="mb-8 bg-white ">
-                <img src={kidsImg} alt="Kids Sparring" className="h-64 w-full object-contain" />
+                <img
+                  src={kidsImg}
+                  alt="Kids Sparring"
+                  className="h-48 w-full object-contain lg:h-64"
+                />
                 <p className="font-semibold text-4xl">Mondays / Thursdays</p>
 
                 <p className="mt-4">
@@ -96,10 +100,10 @@ export default () => (
                 <img
                   src={katasImg}
                   alt="Adult Punching"
-                  className="h-64 w-full object-contain sm:h-48"
+                  className="h-48 w-full object-contain lg:h-64"
                 />
 
-                <p className="font-semibold text-4xl">1st and 3rd Tuesdays</p>
+                <p className="font-semibold text-2xl lg:text-4xl">1st and 3rd Tuesdays</p>
                 <p className="mt-4">
                   <span className="font-bold text-2xl">Begginers Kids KATAS</span>
                 </p>
