@@ -140,10 +140,10 @@ export default () => (
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://maps.app.goo.gl/2VUtCCTZDephrQCD6"
+                  href="https://maps.app.goo.gl/Ly4AWdzJHriXNd2x5"
                   className="mt-5 text-lg"
                 >
-                  413 E Wise St, <br /> Bowie, TX 76230
+                  413 Pelham St, <br /> Bowie, TX 76230
                 </a>
               </Card>
             </Flip>
